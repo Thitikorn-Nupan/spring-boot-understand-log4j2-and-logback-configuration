@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <!--
+        it'll go to create on main resource as understand-log4j-new-version/logs
+        <Property name="log-path">logs</Property>
+        -->
+        <property name="log-path" value="B:/log4j-app" />
+    </Properties>
+
+    <Appenders>
+        <!-- log on console -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} %line - %msg%n"/>
+        </Console>
+
+        <!-- log on file -->
+        <RollingFile name="FileAppender"
+                     fileName="${log-path}/test-log-by-log4j.log"
+                     filePattern="${log-path}/app-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} %line - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <!-- set log level -->
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

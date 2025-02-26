@@ -1,0 +1,21 @@
+2025-02-26 21:19:24 [main] INFO  com.ttknp.understandlog4jnewversion.UnderstandLogBackApplication 53 - Starting UnderstandLogBackApplication using Java 17.0.3.1 with PID 15548 (B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_10\understand-log4j-new-version\target\classes started by User in B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_10\understand-log4j-new-version)
+2025-02-26 21:19:24 [main] INFO  com.ttknp.understandlog4jnewversion.UnderstandLogBackApplication 652 - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 21:19:25 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 111 - Tomcat initialized with port 8080 (http)
+2025-02-26 21:19:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener 173 - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2025-02-26 21:19:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener 173 - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2025-02-26 21:19:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener 173 - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2025-02-26 21:19:25 [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-26 21:19:25 [main] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2025-02-26 21:19:25 [main] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26 21:19:25 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2025-02-26 21:19:25 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 301 - Root WebApplicationContext: initialization completed in 1194 ms
+2025-02-26 21:19:25 [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-26 21:19:25 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-26 21:19:25 [main] INFO  com.ttknp.understandlog4jnewversion.UnderstandLogBackApplication 59 - Started UnderstandLogBackApplication in 2.172 seconds (process running for 3.296)
+2025-02-26 21:19:34 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 21:19:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 532 - Initializing Servlet 'dispatcherServlet'
+2025-02-26 21:19:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 554 - Completed initialization in 0 ms
+2025-02-26 21:19:34 [http-nio-8080-exec-1] INFO  com.ttknp.understandlog4jnewversion.controller.StudentControl 26 - Key is 'students'
+2025-02-26 21:19:54 [http-nio-8080-exec-3] INFO  com.ttknp.understandlog4jnewversion.controller.StudentControl 29 - Key isn't 'students'
+2025-02-26 21:20:01 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown 54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-26 21:20:01 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown 76 - Graceful shutdown complete
