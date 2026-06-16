@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api")
 public class StudentControl {
-    private StudentService studentService;
+    private final StudentService studentService;
 
     public StudentControl() {
         this.studentService = new StudentDTO();
@@ -21,7 +21,6 @@ public class StudentControl {
 
     @GetMapping(value = "/{key}")
     public ResponseEntity mainStudentApi(@PathVariable("key") String key) {
-
         if (key.equals("students")) {
             log.debug("Key is 'students'");
             return ResponseEntity.ok(studentService.getAllStudents());
@@ -30,6 +29,5 @@ public class StudentControl {
         return ResponseEntity.status(200)
                 .header("Message","Key wasn't correct")
                 .body(null);
-
     }
 }

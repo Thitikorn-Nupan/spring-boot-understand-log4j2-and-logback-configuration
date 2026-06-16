@@ -2,7 +2,6 @@ package com.ttknp.understandlog4jnewversion.dto;
 
 import com.ttknp.understandlog4jnewversion.entity.Student;
 import com.ttknp.understandlog4jnewversion.service.StudentService;
-
 import java.util.List;
 
 public class StudentDTO implements StudentService {
