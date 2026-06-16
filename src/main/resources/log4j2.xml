@@ -5,15 +5,13 @@
         it'll go to create on main resource as understand-log4j-new-version/logs
         <Property name="log-path">logs</Property>
         -->
-        <property name="log-path" value="B:/log4j-app" />
+        <property name="log-path" value="B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_10/understand-log4j-new-version/logs" />
     </Properties>
-
     <Appenders>
         <!-- log on console -->
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} %line - %msg%n"/>
         </Console>
-
         <!-- log on file -->
         <RollingFile name="FileAppender"
                      fileName="${log-path}/test-log-by-log4j.log"
